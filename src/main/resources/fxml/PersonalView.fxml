@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<GridPane fx:id="view" hgap="5.0" vgap="5.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <rowConstraints>
+      <RowConstraints minHeight="10.0" prefHeight="30.0" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" />
+   </rowConstraints>
+   <columnConstraints>
+      <ColumnConstraints halignment="RIGHT" hgrow="ALWAYS" maxWidth="118.0" minWidth="118.0" prefWidth="118.0" />
+      <ColumnConstraints hgrow="ALWAYS" minWidth="10.0" prefWidth="482.0" />
+      <ColumnConstraints hgrow="ALWAYS" maxWidth="30.0" minWidth="30.0" prefWidth="30.0" />
+   </columnConstraints>
+   <children>
+      <Label text="DNI/NIE/Pasaporte" />
+      <Label text="Nombre" GridPane.rowIndex="1" />
+      <Label text="Apellidos" GridPane.rowIndex="2" />
+      <Label text="Direccion" GridPane.rowIndex="4" />
+      <Label text="Fecha de nacimiento" GridPane.rowIndex="3" />
+      <Label text="Código postal" GridPane.rowIndex="6" />
+      <Label text="Localidad" GridPane.rowIndex="7" />
+      <Label text="País" GridPane.rowIndex="8" />
+      <Label text="Nacionalidad" GridPane.rowIndex="9" />
+      <ListView fx:id="nacionalidadListView" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.hgrow="ALWAYS" GridPane.rowIndex="9" GridPane.rowSpan="5" />
+      <Button fx:id="masButton" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onMasAction" text="+" GridPane.columnIndex="2" GridPane.rowIndex="9" />
+      <Button fx:id="menosButton" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onMenosAction" text="-" GridPane.columnIndex="2" GridPane.rowIndex="10" />
+      <TextField fx:id="dniText" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.hgrow="ALWAYS" />
+      <TextField fx:id="nombreText" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.hgrow="ALWAYS" GridPane.rowIndex="1" />
+      <TextField fx:id="apellidosText" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.hgrow="ALWAYS" GridPane.rowIndex="2" />
+      <TextField fx:id="codigoPostalText" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.hgrow="ALWAYS" GridPane.rowIndex="6" />
+      <TextArea fx:id="direccionArea" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.hgrow="ALWAYS" GridPane.rowIndex="4" GridPane.rowSpan="2" />
+      <TextField fx:id="localidadText" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.hgrow="ALWAYS" GridPane.rowIndex="7" />
+      <ComboBox fx:id="paisCombo" maxHeight="1.7976931348623157E308" prefWidth="150.0" promptText="Selecciones un país" GridPane.columnIndex="1" GridPane.hgrow="ALWAYS" GridPane.rowIndex="8" />
+      <DatePicker fx:id="nacimientoPicker" maxHeight="1.7976931348623157E308" GridPane.columnIndex="1" GridPane.hgrow="ALWAYS" GridPane.rowIndex="3" />
+   </children>
+   <padding>
+      <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+   </padding>
+</GridPane>
